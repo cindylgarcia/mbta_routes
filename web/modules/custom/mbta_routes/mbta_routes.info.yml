@@ -1,0 +1,5 @@
+name: MBTA Routes
+type: module
+description: subway route information
+package: DrupalEasy
+core_version_requirement: ^9 || ^10
