@@ -88,7 +88,20 @@
  * ];
  * @endcode
  */
-$databases = [];
+//$databases = [];
+
+$databases['default']['default'] = array(
+  'database' => 'databasename',
+  'username' => 'sqlusername',
+  'password' => 'sqlpassword',
+  'host' => 'localhost',
+  'driver' => 'mysql',
+  'prefix' => '',
+  'port' => '3306',
+  'init_commands' => [
+    'isolation_level' => 'SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED',
+  ],
+);
 
 /**
  * Customizing database settings.
@@ -778,3 +791,5 @@ if (file_exists(__DIR__ . '/settings.ddev.php') && getenv('IS_DDEV_PROJECT') == 
   if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
     include $app_root . '/' . $site_path . '/settings.local.php';
   }
+
+ 
