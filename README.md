@@ -1,4 +1,8 @@
 # Description of Module
-This is a simple custom module that makes a call to the MBTA API and 
-fetches the data and displays the current train routes. This module is currently 
-being rewritten to replace the curl commands with the HTTP Client library [Guzzle](https://ourcodeworld.com/articles/read/674/top-7-best-php-http-client-libraries).
+This is a simple custom module that makes a call to 
+the [MBTA API](https://www.mbta.com/developers/v3-api) and 
+fetches the data and displays the current train routes. 
+In the controller file curl commands are using the make a call to the API
+and fetch the data. This module is being rewritten using the 
+default theme implementation of a table and making a call to
+the API using object oriented programming. 
